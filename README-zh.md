@@ -1,6 +1,6 @@
-# PromptPilot
+# PromptHive
 
-PromptPilot 是一个面向 SAM 图像分割的自适应点提示优化框架。它结合特征
+PromptHive 是一个面向 SAM 图像分割的自适应点提示优化框架。它结合特征
 关系与空间关系，通过 DQN 调整正、负提示点，以提升分割质量。
 
 ## 功能
@@ -21,7 +21,7 @@ python -m pip install -r requirements.txt
 
 ## 权重
 
-从项目 Release 页面下载 PromptPilot 权重包并解压到项目根目录。目录结构应为：
+从项目 Release 页面下载 PromptHive 权重包并解压到项目根目录。目录结构应为：
 
 ```text
 weights/
@@ -73,5 +73,5 @@ bash scripts/run_all_four.sh
 ## 测试
 
 ```bash
-python -m unittest discover -s promptpilot/tests -v
+python -m unittest discover -s prompthive/tests -v
 ```
