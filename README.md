@@ -1,6 +1,6 @@
-# PromptPilot
+# PromptHive
 
-PromptPilot is an adaptive point-prompt optimization framework for SAM image segmentation. It combines feature relationships and spatial relationships, and uses DQN to adjust positive and negative prompt points to improve segmentation quality.
+PromptHive is an adaptive point-prompt optimization framework for SAM image segmentation. It combines feature relationships and spatial relationships, and uses DQN to adjust positive and negative prompt points to improve segmentation quality.
 
 ## Features
 
@@ -18,7 +18,7 @@ python -m pip install -r requirements.txt
 
 ## Weights
 
-Download the PromptPilot weight package from the project's Release page and extract it into the project root directory. The directory structure should be:
+Download the PromptHive weight package from the project's Release page and extract it into the project root directory. The directory structure should be:
 ```lua
 weights/
 |-- best-strict.pt
@@ -53,4 +53,4 @@ Set `LIMIT` to `0` to run the full evaluation. Change `MODE` to `pt-graph` or `p
 
 ## Testing
 
-python -m unittest discover -s promptpilot/tests -v
+python -m unittest discover -s prompthive/tests -v
