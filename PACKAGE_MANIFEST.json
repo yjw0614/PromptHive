@@ -1,0 +1,25 @@
+{
+  "package": "PromptPilot",
+  "method": "adaptive point-prompt optimization",
+  "modes": {
+    "pt-strict": {
+      "algorithm": "three-action-dqn",
+      "checkpoint": "weights/best-strict.pt",
+      "state_dimension": 5
+    },
+    "pt-graph": {
+      "algorithm": "three-action-dqn-graph",
+      "checkpoint": "weights/best-graph.pt",
+      "state_dimension": 22
+    },
+    "pkl": {
+      "algorithm": "object-keyed-policy-table",
+      "checkpoint": "weights/best-policy-table.pkl",
+      "diagnostic_only": true
+    }
+  },
+  "metrics": {
+    "primary": "mDSC",
+    "boundary": "HD95 at 560x560"
+  }
+}
